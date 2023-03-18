@@ -1,0 +1,100 @@
+from flask import Flask, request
+import json
+import duckdb
+
+app = Flask(__name__)
+
+@app.route('/segmentation', methods=['POST'])
+def segmentation():
+    payload = request.json
+    query = generate_sql_query(payload)
+    result = execute_sql_query(query)
+    return json.dumps(result)
+
+def generate_sql_query(payload):
+    table = payload['table']
+    fields = ", ".join(payload['fields'])
+    filters = generate_filters(payload['filters'])
+    return f"SELECT {fields} FROM {table} WHERE {filters}"
+
+def generate_filters(filters):
+    sql_filters = []
+    for f in filters:
+        field = f['field']
+        operator = f['operator']
+        value = f['value']
+        if isinstance(value, dict):
+            value = generate_filters(value['filters'])
+        elif isinstance(value, list):
+            value = ", ".join(map(str, value))
+        else:
+            value = f"'{value}'"
+        sql_filters.append(f"{field} {operator.upper()} {value}")
+    return " AND ".join(sql_filters)
+
+def execute_sql_query(query):
+    conn = duckdb.connect('my_database.duckdb')
+    result = conn.execute(query).fetchall()
+    conn.close()
+    return result
+
+
+
+
+# from flask import Flask, request, jsonify
+# import duckdb
+
+# app = Flask(__name__)
+
+# # DuckDB database connection
+# db_path = 'my_database.duckdb'
+
+# @app.route('/segmentation', methods=['POST'])
+# def segmentation():
+#     # Get the JSON payload from the request
+#     data = request.get_json()
+
+#     # Build the SQL query
+#     sql = "SELECT "
+#     if "select" in data:
+#         sql += ", ".join(data["select"])
+#     else:
+#         sql += "*"
+#     sql += " FROM users JOIN user_events ON users.user_id = user_events.user_id WHERE "
+#     conditions = []
+#     values = []
+#     for condition in data["conditions"]:
+#         if condition["field"] == "Event Name":
+#             conditions.append(f"{condition['field']} {condition['operator']} ({', '.join(['?']*len(condition['value']))})")
+#             values.extend(condition['value'])
+#         else:
+#             conditions.append(f"{condition['field']} {condition['operator']} ?")
+#             values.append(condition['value'])
+#     sql += " AND ".join(conditions)
+#     if "group_by" in data:
+#         sql += f" GROUP BY {', '.join(data['group_by'])}"
+#     sql += ";"
+
+#     # Connect to the database
+#     conn = duckdb.connect(db_path)
+
+#     # Execute the SQL command
+#     cur = conn.cursor()
+#     cur.execute(sql, values)
+
+#     # Get the results
+#     results = cur.fetchall()
+
+#     # Close the database connection
+#     cur.close()
+#     conn.close()
+
+#     # Return the results as a JSON object
+#     return results
+#     return jsonify(results)
+
+
+
+
+if __name__ == '__main__':
+    app.run()
