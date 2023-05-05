@@ -16,7 +16,7 @@
 # print(f'index[{x}]')
 
 
-
+#binary search 
 def binarySearch(arr, key):
     first = 0
     last = int(len(arr)-1)
