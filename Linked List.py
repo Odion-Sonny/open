@@ -1,10 +1,10 @@
 # Linked List
-
 class Node:
     def __init__(self, value=None):
         self.value = value
         self.next = None
 
+#singly linked list
 class SinglyLinkedList:
     def __init__(self):
         self.head = None
@@ -43,7 +43,7 @@ class SinglyLinkedList:
         # 5. make next of prev_node as new_node
         prev_node.next = new_node
 
-
+    #append to linked list 
     def append(self, new_node):
         new_node = Node(new_node)
         if self.head is None:
@@ -57,7 +57,7 @@ class SinglyLinkedList:
         last.next = new_node
 
 
-
+    #traverse linked list
     def traversal(self):
         if self.head is None:
             return "List is empty"
@@ -65,7 +65,8 @@ class SinglyLinkedList:
         while pos is not None:
             print(pos.value)
             pos = pos.next
-
+    
+    #search linked list
     def search(self, value):
         if self.head is None:
             return "List is empty"
