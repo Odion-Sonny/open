@@ -53,3 +53,4 @@ plt.xlabel('Time (s)')
 plt.ylabel('Acceleration (pixels/s^2)')
 plt.title('Mouse Acceleration Over Time')
 plt.show()
+# hopefully i remember to make updates to this tomorrow
