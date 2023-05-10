@@ -8,3 +8,16 @@ def generate_password(length):
 password_length = 10
 random_password = generate_password(password_length)
 print("Randomly generated password:", random_password)
+
+
+import random
+
+def roll_dice():
+    return random.randint(1, 6)
+
+num_rolls = 5
+
+print("Rolling the dice", num_rolls, "times...")
+for _ in range(num_rolls):
+    result = roll_dice()
+    print("Dice rolled:", result)
