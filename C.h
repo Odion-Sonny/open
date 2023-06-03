@@ -1,3 +1,4 @@
+//The following program contains random programs written in C programming language
 #include <stdio.h>
 
 int main() {
@@ -81,20 +82,6 @@ int main() {
     }
 
     printf("Factorial of 5: %d\n", factorial);
-
-    
-
-    int num = 7;
-
-    if (num % 2 == 0) {
-
-        printf("%d is even.\n", num);
-
-    } else {
-
-        printf("%d is odd.\n", num);
-
-    }
 
     
 
@@ -342,4 +329,3 @@ int main() {
         reverse = reverse * 10 + num % 10;
 
         num /= 10
-
