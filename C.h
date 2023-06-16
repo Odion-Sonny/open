@@ -43,15 +43,7 @@ int main() {
 
     
 
-    int count = 0;
-
-    while (count < 5) {
-
-        printf("Count: %d\n", count);
-
-        count++;
-
-    }
+   
 
     
 
@@ -111,7 +103,15 @@ int main() {
 
     printf("The maximum number in the array is: %d\n", maxNum);
 
-    
+    int count = 0;
+
+    while (count < 5) {
+
+        printf("Count: %d\n", count);
+
+        count++;
+
+    } 
 
     int a = 5;
 
@@ -125,22 +125,7 @@ int main() {
 
     
 
-    temp = a;
-
-    a = b;
-
-    b = temp;
-
-    
-
-    printf("After swapping: a = %d, b = %d\n", a, b);
-
-    
-
-    return 0;
-
-}
-
+   
 
 int main() {
 
@@ -211,6 +196,21 @@ int main() {
     }
 
     printf("Factorial of %d is: %d\n", n, factorial);
+ temp = a;
+
+    a = b;
+
+    b = temp;
+
+    
+
+    printf("After swapping: a = %d, b = %d\n", a, b);
+
+    
+
+    return 0;
+
+}
 
     int a = 10;
 
