@@ -19,20 +19,7 @@ int main() {
 
     
 
-    if (sum > product) {
-
-        printf("The sum is greater than the product.\n");
-
-    } else if (sum < product) {
-
-        printf("The product is greater than the sum.\n");
-
-    } else {
-
-        printf("The sum and product are equal.\n");
-
-    }
-
+   
     
 
     for (int i = 1; i <= 10; i++) {
@@ -180,7 +167,41 @@ int main() {
     for (i = 0; i < 5; i++) {
 
         printf("%d ", array[i]);
+    int num = 10;
 
+    do {
+
+        printf("%d ", num);
+
+        num--;
+
+    } while (num > 0);
+
+    printf("\n");
+
+    int base = 2;
+
+    int exponent = 3;
+
+    int result = 1;
+
+    for (i = 0; i < exponent; i++) {
+
+        result *= base;
+
+    }
+
+    printf("Result: %d\n", result);
+
+    int num = 1234;
+
+    int reverse = 0;
+
+    while (num > 0) {
+
+        reverse = reverse * 10 + num % 10;
+
+        num /= 10
     }
 
     printf("\n");
@@ -211,6 +232,19 @@ int main() {
     return 0;
 
 }
+ if (sum > product) {
+
+        printf("The sum is greater than the product.\n");
+
+    } else if (sum < product) {
+
+        printf("The product is greater than the sum.\n");
+
+    } else {
+
+        printf("The sum and product are equal.\n");
+
+    }
 
     int a = 10;
 
@@ -227,7 +261,41 @@ int main() {
     printf("a = %d, b = %d\n", a, b);
 
     int n1 = 10;
+    int num = 10;
 
+    do {
+
+        printf("%d ", num);
+
+        num--;
+
+    } while (num > 0);
+
+    printf("\n");
+
+    int base = 2;
+
+    int exponent = 3;
+
+    int result = 1;
+
+    for (i = 0; i < exponent; i++) {
+
+        result *= base;
+
+    }
+
+    printf("Result: %d\n", result);
+
+    int num = 1234;
+
+    int reverse = 0;
+
+    while (num > 0) {
+
+        reverse = reverse * 10 + num % 10;
+
+        num /= 10
     int n2 = 20;
 
     int max = (n1 > n2) ? n1 : n2;
@@ -289,11 +357,6 @@ int main() {
             break;
 
         default:
-
-            printf("Your age is neither 18 nor 25\n");
-
-    }
-
     int num = 10;
 
     do {
@@ -329,3 +392,8 @@ int main() {
         reverse = reverse * 10 + num % 10;
 
         num /= 10
+            printf("Your age is neither 18 nor 25\n");
+
+    }
+
+
