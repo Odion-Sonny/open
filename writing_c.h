@@ -292,5 +292,61 @@ int main() {
     return 0;
 
 }
+// Function to find the maximum of two numbers
+int max(int a, int b) {
+    return (a > b) ? a : b;
+}
+
+int main() {
+    int num1 = 10;
+    int num2 = 20;
+
+    int maximum = max(num1, num2);
+    printf("Maximum of %d and %d is %d\n", num1, num2, maximum);
+
+    return 0;
+}
+// Function to find the maximum of two numbers
+int max(int a, int b) {
+    return (a > b) ? a : b;
+}
+
+int main() {
+    int num1 = 10;
+    int num2 = 20;
+
+    int maximum = max(num1, num2);
+    printf("Maximum of %d and %d is %d\n", num1, num2, maximum);
+
+    return 0;
+}
+// Function to find the maximum of two numbers
+int max(int a, int b) {
+    return (a > b) ? a : b;
+}
+
+int main() {
+    int num1 = 10;
+    int num2 = 20;
+
+    int maximum = max(num1, num2);
+    printf("Maximum of %d and %d is %d\n", num1, num2, maximum);
+
+    return 0;
+}
+// Function to find the maximum of two numbers
+int max(int a, int b) {
+    return (a > b) ? a : b;
+}
+
+int main() {
+    int num1 = 10;
+    int num2 = 20;
+
+    int maximum = max(num1, num2);
+    printf("Maximum of %d and %d is %d\n", num1, num2, maximum);
+
+    return 0;
+}
 
 
