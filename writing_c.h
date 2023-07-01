@@ -157,40 +157,6 @@ int main() {
 
     
 
-    if (sum > product) {
-
-        printf("The sum is greater than the product.\n");
-
-    } else if (sum < product) {
-
-        printf("The product is greater than the sum.\n");
-
-    } else {
-
-        printf("The sum and product are equal.\n");
-
-    }
-
-    
-
-    for (int i = 1; i <= 10; i++) {
-
-        printf("%d\n", i);
-
-    }
-
-    
-
-    int count = 0;
-
-    while (count < 5) {
-
-        printf("Count: %d\n", count);
-
-        count++;
-
-    }
-
     
 
     int array[] = {1, 2, 3, 4, 5};
@@ -276,6 +242,108 @@ int main() {
     printf("Before swapping: a = %d, b = %d\n", a, b);
 
     
+    if (sum > product) {
+
+        printf("The sum is greater than the product.\n");
+
+    } else if (sum < product) {
+
+        printf("The product is greater than the sum.\n");
+
+    } else {
+
+        printf("The sum and product are equal.\n");
+
+    }
+
+    
+
+    for (int i = 1; i <= 10; i++) {
+
+        printf("%d\n", i);
+
+    }
+
+    
+
+    int count = 0;
+
+    while (count < 5) {
+
+        printf("Count: %d\n", count);
+
+        count++;
+
+    }
+
+    if (sum > product) {
+
+        printf("The sum is greater than the product.\n");
+
+    } else if (sum < product) {
+
+        printf("The product is greater than the sum.\n");
+
+    } else {
+
+        printf("The sum and product are equal.\n");
+
+    }
+
+    
+
+    for (int i = 1; i <= 10; i++) {
+
+        printf("%d\n", i);
+
+    }
+
+    
+
+    int count = 0;
+
+    while (count < 5) {
+
+        printf("Count: %d\n", count);
+
+        count++;
+
+    }
+
+    if (sum > product) {
+
+        printf("The sum is greater than the product.\n");
+
+    } else if (sum < product) {
+
+        printf("The product is greater than the sum.\n");
+
+    } else {
+
+        printf("The sum and product are equal.\n");
+
+    }
+
+    
+
+    for (int i = 1; i <= 10; i++) {
+
+        printf("%d\n", i);
+
+    }
+
+    
+
+    int count = 0;
+
+    while (count < 5) {
+
+        printf("Count: %d\n", count);
+
+        count++;
+
+    }
+
 
     temp = a;
 
