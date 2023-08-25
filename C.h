@@ -20,22 +20,6 @@ int main() {
     
 
    
-    
-
-    for (int i = 1; i <= 10; i++) {
-
-        printf("%d\n", i);
-
-    }
-
-    
-
-   
-
-    
-
-    int array[] = {1, 2, 3, 4, 5};
-
     int arrayLength = sizeof(array) / sizeof(array[0]);
 
     
@@ -50,7 +34,91 @@ int main() {
 
     printf("\n");
 
+    int arrayLength = sizeof(array) / sizeof(array[0]);
+
     
+
+    printf("Array elements: ");
+
+    for (int i = 0; i < arrayLength; i++) {
+
+        printf("%d ", array[i]);
+
+    }
+
+    printf("\n");int arrayLength = sizeof(array) / sizeof(array[0]);
+
+    
+
+    printf("Array elements: ");
+
+    for (int i = 0; i < arrayLength; i++) {
+
+        printf("%d ", array[i]);
+
+    }
+
+    printf("\n");int arrayLength = sizeof(array) / sizeof(array[0]);
+
+    
+
+    printf("Array elements: ");
+
+    for (int i = 0; i < arrayLength; i++) {
+
+        printf("%d ", array[i]);
+
+    }
+
+    printf("\n");int arrayLength = sizeof(array) / sizeof(array[0]);
+
+    
+
+    printf("Array elements: ");
+
+    for (int i = 0; i < arrayLength; i++) {
+
+        printf("%d ", array[i]);
+
+    }
+
+    printf("\n");int arrayLength = sizeof(array) / sizeof(array[0]);
+
+    
+
+    printf("Array elements: ");
+
+    for (int i = 0; i < arrayLength; i++) {
+
+        printf("%d ", array[i]);
+
+    }
+
+    printf("\n");int arrayLength = sizeof(array) / sizeof(array[0]);
+
+    
+
+    printf("Array elements: ");
+
+    for (int i = 0; i < arrayLength; i++) {
+
+        printf("%d ", array[i]);
+
+    }
+
+    printf("\n");int arrayLength = sizeof(array) / sizeof(array[0]);
+
+    
+
+    printf("Array elements: ");
+
+    for (int i = 0; i < arrayLength; i++) {
+
+        printf("%d ", array[i]);
+
+    }
+
+    printf("\n");
 
     int factorial = 1;
 
@@ -128,23 +196,67 @@ int main() {
 
     printf("The value of pi is: %.2f\n", pi);
 
-    char letter = 'A';
+int arrayLength = sizeof(array) / sizeof(array[0]);
 
-    printf("The letter is: %c\n", letter);
+    
 
-    int i;
+    printf("Array elements: ");
 
-    for (i = 0; i < 10; i++) {
+    for (int i = 0; i < arrayLength; i++) {
 
-        printf("%d ", i);
+        printf("%d ", array[i]);
+
+    }
+
+    printf("\n");int arrayLength = sizeof(array) / sizeof(array[0]);
+
+    
+
+    printf("Array elements: ");
+
+    for (int i = 0; i < arrayLength; i++) {
+
+        printf("%d ", array[i]);
+
+    }
+
+    printf("\n");int arrayLength = sizeof(array) / sizeof(array[0]);
+
+    
+
+    printf("Array elements: ");
+
+    for (int i = 0; i < arrayLength; i++) {
+
+        printf("%d ", array[i]);
+
+    }
+
+    printf("\n");int arrayLength = sizeof(array) / sizeof(array[0]);
+
+    
+
+    printf("Array elements: ");
+
+    for (int i = 0; i < arrayLength; i++) {
+
+        printf("%d ", array[i]);
+
+    }
+
+    printf("\n");int arrayLength = sizeof(array) / sizeof(array[0]);
+
+    
+
+    printf("Array elements: ");
+
+    for (int i = 0; i < arrayLength; i++) {
+
+        printf("%d ", array[i]);
 
     }
 
     printf("\n");
-
-    int num = 7;
-
-    if (num % 2 == 0) {
 
         printf("%d is even\n", num);
 
@@ -184,31 +296,43 @@ int main() {
     int exponent = 3;
 
     int result = 1;
+int arrayLength = sizeof(array) / sizeof(array[0]);
 
-    for (i = 0; i < exponent; i++) {
+    
 
-        result *= base;
+    printf("Array elements: ");
+
+    for (int i = 0; i < arrayLength; i++) {
+
+        printf("%d ", array[i]);
 
     }
 
-    printf("Result: %d\n", result);
+    printf("\n");int arrayLength = sizeof(array) / sizeof(array[0]);
 
-    int num = 1234;
+    
 
-    int reverse = 0;
+    printf("Array elements: ");
 
-    while (num > 0) {
+    for (int i = 0; i < arrayLength; i++) {
 
-        reverse = reverse * 10 + num % 10;
+        printf("%d ", array[i]);
 
-        num /= 10
+    }
+
+    printf("\n");int arrayLength = sizeof(array) / sizeof(array[0]);
+
+    
+
+    printf("Array elements: ");
+
+    for (int i = 0; i < arrayLength; i++) {
+
+        printf("%d ", array[i]);
+
     }
 
     printf("\n");
-
-    int factorial = 1;
-
-    int n = 5;
 
     for (i = 1; i <= n; i++) {
 
@@ -231,22 +355,41 @@ int main() {
 
     return 0;
 
-}
- if (sum > product) {
+ printf("\n");int arrayLength = sizeof(array) / sizeof(array[0]);
 
-        printf("The sum is greater than the product.\n");
+    
 
-    } else if (sum < product) {
+    printf("Array elements: ");
 
-        printf("The product is greater than the sum.\n");
+    for (int i = 0; i < arrayLength; i++) {
 
-    } else {
-
-        printf("The sum and product are equal.\n");
+        printf("%d ", array[i]);
 
     }
-//The following program contains random programs written in C programming language
-#include <stdio.h>
+
+    printf("\n");int arrayLength = sizeof(array) / sizeof(array[0]);
+
+    
+
+    printf("Array elements: ");
+
+    for (int i = 0; i < arrayLength; i++) {
+
+        printf("%d ", array[i]);
+
+    }
+
+    printf("\n");
+
+    for (i = 1; i <= n; i++) {
+
+        factorial *= i;
+
+    }
+
+    printf("Factorial of %d is: %d\n", n, factorial);
+ temp = a;
+
 
 int main() {
 
